@@ -1,0 +1,51 @@
+<html>
+
+<head>
+    <title>Test</title>
+    <script type="text/javascript" src="test.js"></script>
+</head>
+
+<body>
+    <div id="main">
+
+        <select id="mTime" onchange="">
+            <option>10</option>
+            <option>11</option>
+            <option>12</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+        </select>
+
+        <select id="mSub" onchange="loadTimeTableO()">
+            <option>maths</option>
+            <option>eng</option>
+            <option>com</option>
+            <option>phy</option>
+            <option>chem</option>
+            <option>sports</option>
+        </select><br>
+    </div>
+    <div id="div-details">
+        <select id="details">  
+                        </select>
+    </div>
+    <div>
+        <select id="class" onchange="loadTimeTableO()">
+                    <option>ClassA</option>
+                    <option>ClassB</option>
+                </select><br>
+        <input type="button" name="save" id="save" value="Save" onclick="saveDetailsO()" /><br>
+    </div>
+    <div>
+        <input type="button" name="load" id="load" value="Load Class Details" onclick="loadDetailsO()" /><br>
+    </div>
+
+    <div id='div-empsA'>
+    </div>
+    <div id='div-empsB'>
+    </div>
+</body>
+
+</html>
